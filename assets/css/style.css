@@ -1,23 +1,86 @@
 :root {
-    --main-color: #024e76;
+    --main-color: #25344d;
+    --secondary-color: #4bccca;
   }
 
 * {
-    color: var(--main-color)
+    color: var(--main-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/*Header Style Start
+Questions: Can't figure out how to move colored background from my name to go all the way left, and also I think I need to move the names position down. Can't put underlines under the nav links. I feel like aligning the nav links didn't actually put them in the center. I also feel like some of what I wrote is unecessary.*/
 header {
     padding: 20px 35px;
-    color: #4bccca;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-image: url("./images/blue-background.jpg");
+    background-color: #182230;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-position: 80%;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
 
 header h1 {
-    color: #4bccca;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+    background-color: var(--secondary-color);
+}
+
+header h1 a {
+    color: var(--main-color)
+}
+
+header nav {
+
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    border-bottom: var(--secondary-color);
+    border-bottom: 10px;
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+/*Hero Style Start
+Questions: I think I am mostly confused about positioning the little words in the bottom right so they are not on the side. I have lots of positioning questions.*/
+.hero {
+    background-image: url("../images/blue-background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background-attachment: scroll;
+    background-position: 80%;
+    height: 140px;
+}
+
+.hero h2 {
+    background-color: var(--secondary-color);
+}
+
+/*About Me Section Style Start 
+Questions: once again I don't really understand the positioning. I also don't know how to create that little line that they seem to want separating the heading and the paragraph*/
+.about-me img {
+    height: 200px;
 }
