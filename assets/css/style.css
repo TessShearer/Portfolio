@@ -1,0 +1,23 @@
+:root {
+    --main-color: #024e76;
+  }
+
+* {
+    color: var(--main-color)
+}
+
+header {
+    padding: 20px 35px;
+    color: #4bccca;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url("./images/blue-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+
+header h1 {
+    color: #4bccca;
+}
