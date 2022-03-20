@@ -2,12 +2,12 @@
     --main-color: #25344d;
     --secondary-color: #97c9cc;
   }
-
 * {
     color: var(--main-color);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Header Style Start*/
@@ -21,6 +21,7 @@ header {
     background-position: center;
     background-attachment: fixed;
     background-position: 80%;
+    
 }
 
 header a {
@@ -58,8 +59,8 @@ header nav ul li a {
     margin: 5px;
 }
 
-/*Hero Style Start
-Questions: I think I am mostly confused about positioning the little words in the bottom right so they are not on the side. I have lots of positioning questions.*/
+
+/*Hero Style Start*/
 .hero {
     background-image: url("../images/blue-background.jpg");
     background-size: cover;
@@ -79,15 +80,117 @@ Questions: I think I am mostly confused about positioning the little words in th
     margin: 0 60px 15px 0;
 }
 
-/*About Me Section Style Start 
-Questions: once again I don't really understand the positioning. I also don't know how to create that little line that they seem to want separating the heading and the paragraph*/
+/*General Main Sections Content*/
+.section-title {
+    border-right: var(--main-color);
+    border-width: 0 3px 0 0;
+    border-style: solid;
+    padding: 5px 5px 70px 50px;
+    margin: 20px 10px 20px 0;
+    justify-content: right;
+    display: flex;
+    flex-direction: column;
+}
+.section-title > span > span {
+    display: none;
+}
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*About Me Section Style Start*/
 .about-me {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 .about-me img {
     height: 200px;
+    padding: 10px;
 }
 .about-me p {
-    width: 500px;
+    width: 100%;
+    display: flex;
+    flex: 0 1 750px;
 }
+
+
+/*work section*/
+.work {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-link {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.project-link > article {
+    width: 50%;
+}
+.project-link article img {
+    outline: 5px solid var(--main-color);
+    width: 100%;
+}
+.project-link article p {
+    background-color: var(--secondary-color);
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    top: 300px;
+    width: 28%;
+}
+.project-link article p span {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+/* Contact Me Section Start */
+.contact-me {
+    display: flex;
+    justify-content: space-between;
+}
+address ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+/* Resume Section */
+.resume {
+    display: flex;
+    justify-content: space-between;    
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1030px) {
+    .section-title {
+        margin: auto;
+        margin-bottom: 5px;
+        border-bottom: var(--main-color);
+        border-width: 0 0 3px 0;
+        border-style: solid;
+        padding: 5px;
+        flex-direction: row;
+    }
+    .section-title > span > span {
+        display: inline;
+    }
+    .work {
+        flex-direction: column;
+    }
+    .about-me img {
+        margin: auto;
+    }
+    .small-link {
+        margin: 5px
+    }
+  }
