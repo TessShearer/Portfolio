@@ -90,6 +90,7 @@ header nav ul li a {
     justify-content: right;
     display: flex;
     flex-direction: column;
+    width: 8%;
 }
 .section-title > span > span {
     display: none;
@@ -119,51 +120,20 @@ header nav ul li a {
     flex: 0 1 700px;
 }
 
-
-/*work section*/
-.work {
-    display: flex;
-    justify-content: space-between;
-}
+/* Work Section*/
 
 .project-link {
-    display: flex;
+    width: 50%;
+}
+.big-project-link {
+    width: 100%;
+}
+.small-project-links {
     flex-wrap: wrap;
-    margin: 30px;
+    flex-direction: row;
 }
-.project-link a {
- 
-}
-
-.project-link a p {
-    background-color: var(--secondary-color);
-    font-size: 30px;
-    font-weight: bold;
-    color:white;
-}
-.project-link p span {
-    font-size: 10px;
-    font-weight: 200;
-}
-.project-link a {
-    flex: 0 1 auto;
-}
-.horiseon {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/Horiseon.jpeg");
-
-}
-.run-buddy {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/Run-Buddy.jpeg")
-}
-.placeholder {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/matrix-code.jpg");
-}
-
-.project-header{
-    background-color:teal;
-    display:block;
-    font-size:2em;
-    color:white;
+.big-project-links div h3 {
+    text-align: center;
 }
 
 /* Contact Me Section Start */
