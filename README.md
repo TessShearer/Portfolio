@@ -8,7 +8,7 @@ Employers would like to be able to easily learn more about me. This includes an 
 
 ## Usage
 
-Visit the finished product here: 
+Visit the finished product here: https://tessshearer.github.io/Portfolio/
 
 ![Screenshot of Portfolio](./assets/images/Portfolio-screenshot.png)
 
