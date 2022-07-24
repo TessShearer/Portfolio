@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tess Shearer Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
@@ -40,81 +40,97 @@
     </section>
 
     <main>
-        <!--About Me Section-->
-        <section class="about-me" id="about-me">
-            <h2 class="section-title"><span>About</span><span><span>&nbsp;</span>Me</span></h2>
-            <div class="section-content">
-                <p>
-                    I graduated high school in 2017 with plans to pursue a carreer in math and computer science in
-                    college.
-                    For my freshman year I was able to follow that plan but due to unforeseen health issues I found it
-                    necessary to change my emphases of education. I graduate from Brigham Young University with a
-                    Bachelor's
-                    in Communication Disorders in the Spring of 2021. Since graduating I have had the opportunity to get
-                    back
-                    on my preferred career path and plan to graduate from University of Utah's coding bootcamp this fall
-                    and
-                    pursue a career in software development.
-                </p>
-                <img src="./assets/images/self-img.jpg" alt="Tess Shearer sitting on a rock among trees and snow" />
+        <!--About Me Row-->
+        <div class="container">
+            <div class="row about-me" id="about-me">
+                <div class="col-2">
+                    <h2 class="section-title"><span>About</span><span><span>&nbsp;</span>Me</span></h2>
+                </div>
+                <div class="col-8">
+                    <p>
+                        My name is Tess Shearer. I graduated in with a Bachelor's Degree in Communication Disorders from Brigham Young University in 2021. I am graduating with a certificate in full stack development from the University of Utah this August. I have experience with HTML, CSS, GitHub, JavaScript, React, Node, Express, and Mongoose.
+                    </p>
+                </div>
+                <div class="col-2">
+                    <img src="./assets/images/self-img.jpg" alt="Tess Shearer sitting on a rock among trees and snow" />
+                </div>
             </div>
-        </section>
 
-        <!--Work Section-->
-        <section class="work" id="work"> 
-            <h2 class="section-title">Work</h2>
-            <div class="section-content">
-                
-                <!--BIG LINK-->
-                <div class="big-project-links col-4">
-                <div class="horiseon">
-                    <h3>Horiseon: HTML/CSS</h3>
-                    <a href="https://tessshearer.github.io/afterParty/" target="_blank"> <img src="./assets/images/afterparty_screenshot.png" class="big-project-link" /> </a>
+
+            <!--Work Row-->
+            <div class="row big-links-work" id="work">
+                <div class="col-2">
+                    <h2 class="section-title">Work</h2>
+                </div>
+
+                <!--BIG LINKS-->
+                <div class="horiseon col-5">
+                    <h3>AfterParty: HTML/CSS/JavaScript</h3>
+                    <a href="https://tessshearer.github.io/afterParty/" target="_blank"> <img
+                            src="./assets/images/afterparty_screenshot.png" class="big-project-link" /> </a>
+                </div>
+                <div class="col-5">
+                    <h3>Placeholder: HTML/CSS</h3>
+                    <a href="https://petsagram-project2.herokuapp.com/" target="_blank"> <img
+                            src="./assets/images/Petsagram-screenshot.png" class="big-project-link" /> </a>
                 </div>
             </div>
 
             <!--SMALL LINKS-->
-            <div class="small-project-links col-8">
-                <div>
-                    <h3>Placeholder: HTML/CSS</h3>
-                    <a href="https://www.youtube.com/watch?v=FOitGa117_s&t=1s" target="_blank"> <img src="./assets/images/matrix-code.jpg" class="project-link" /> </a>
-                </div>
-                <div>
+            <div class="row small-links-work">
+                <div class="col-2"></div>
+                <div class="col-3">
                     <h3>Run-Buddy: HTML/CSS</h3>
-                    <a href="https://tessshearer.github.io/run-buddy/" target="_blank"> <img src="./assets/images/Run-Buddy.jpeg" class="project-link" /> </a>
+                    <a href="https://tessshearer.github.io/run-buddy/" target="_blank"> <img
+                            src="./assets/images/Run-Buddy.jpeg" class="project-link" /> </a>
                 </div>
-                <div>
-                    <h3>Placeholder: HTML/CSS</h3>
-                    <a href="https://www.youtube.com/watch?v=FOitGa117_s&t=1s" target="_blank"> <img src="./assets/images/matrix-code.jpg" class="project-link" /> </a>
+                <div class="col mid-div">
+                    <h3>Coding Quiz: HTML/JavaScript/CSS</h3>
+                    <a href="https://tessshearer.github.io/Code-Quiz/" target="_blank"> <img
+                            src="./assets/images/Code-Quiz-Screenshot.png" class="project-link" /> </a>
                 </div>
-                <div>
-                    <h3>Placeholder: HTML/CSS</h3>
-                    <a href="https://tessshearer.github.io/Horiseon-Refactor/" target="_blank"> <img src="./assets/images/Horiseon.jpeg" class="project-link" /> </a>
+                <div class="col-3">
+                    <h3>Horiseon: HTML/CSS</h3>
+                    <a href="https://tessshearer.github.io/Horiseon-Refactor/" target="_blank"> <img
+                            src="./assets/images/Horiseon.jpeg" class="project-link" /> </a>
                 </div>
+            </div>
+
+
+
+            <!--Contact Me Section-->
+            <div class="contact-me row" id="contact-me">
+                <div class="col-2">
+                    <h2 class="section-title">Contact Me</h2>
+                </div>
+                <div class="col-10 contact-info">
+                    <address>
+                        <ul>
+                            <li> 801-310-9809 </li>
+                            <li> shearer.tess@gmail.com </li>
+                            <li> 474 N 450 E Springville, UT, 84663</li>
+                            <li> GitHub </li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+
+
+            <!--Resume Section-->
+            <div class="resume row" id="resume">
+                <div class="col-2">
+                    <h2 class="section-title">Resume</h2>
+                </div>
+
+                <div class="col-10 resume-link">
+                    <a href="./assets/Resume-Temporary.pdf" target="_blank">Click Here to See or Download a Copy of my
+                        Resume</a>
+                </div>
+            </div>
+
         </div>
-    </div>
-
-        <!--Contact Me Section-->
-        <section class="contact-me" id="contact-me">
-            <h2 class="section-title">Contact Me</h2>
-            <address class="section-content">
-                <ul>
-                    <li> 801-310-9809 </li>
-                    <li> shearer.tess@gmail.com </li>
-                    <li> 474 N 450 E Springville, UT, 84663</li>
-                    <li> GitHub </li>
-                </ul>
-            </address>
-        </section>
-
-        <!--Resume Section-->
-        <section class="resume" id="resume">
-            <h2 class="section-title">Resume</h2>
-            <section class="section-content">
-                <a href="./assets/Resume-Temporary.pdf" target="_blank">Click Here to See my (Temporary) Resume</a>
-            </section>
-        </section>
     </main>
+
 </body>
 
 </html>
